@@ -1,6 +1,6 @@
-/* =================
-    Formatação geral
-   ================= */
+/* ===================
+        Estilo geral
+   =================== */
 * {
     margin: 0px;
     padding: 0px;
@@ -8,16 +8,9 @@
     font-family: "Arial", "Times New Roman";
 }
 
-ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-li {
-    list-style: none;
-    display: inline;
-}
-
+/* ===================
+   Container principal
+   =================== */
 .container {
     display: flex;
     flex-direction: row;
@@ -25,27 +18,89 @@ li {
     align-items: center;
     max-width: 1920px;
     width: 100%;
-    /* background-color: red; */
 }
 
+/* ===================
+   Container da NavBar
+   =================== */
 .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: 80px;
-    /* background-color: green; */
 }
 
+/* ===================
+     Dimensão da Logo
+   =================== */
 #logo {
     height: 15%;
     width: 15%;
-
 }
 
-.text-nav {
+/* ===================
+      Formatação li 
+   =================== */
+li {
+    list-style: none;
+    display: inline;
+}
+
+/* ===================
+     Texto da NavBar
+   =================== */
+.list li a {
     text-decoration: none;
     font-size: 21px;
     color: black;
-    margin: 90px;
+    margin: 100px;
+}
+
+/* ===================
+   Animaçao Texo NavBar 
+   =================== */
+.list li a:hover {
+
+}
+
+/* ===================
+   Container content 
+   =================== */
+.container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 105px;
+    margin-right: 105px;
+}
+
+/* ===================
+      Astronaut img
+   =================== */
+#astronaut {
+    margin-top: 100px;
+    width: 30%;
+    height: 30%;
+}
+
+/* ===================
+         Content 
+   =================== */
+.content {
+    display: inline;
+    width: 637px;
+    height: 400px;
+    margin-left: 140px;
+}
+
+/* ===================
+          Texto 
+   =================== */
+.text {
+    text-indent: 2.2em;
+    line-height: 1.5;
+    margin-top: 0.75em;
+    text-align: justify;
 }
