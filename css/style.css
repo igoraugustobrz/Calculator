@@ -1,5 +1,30 @@
 /* ===================
-        Estilo geral
+     Animação carregar 
+        conteúdo
+   =================== */
+@keyframes load {
+    to {
+        opacity: 1;
+    }
+
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+/* =====================
+   Definição da animação 
+   ===================== */
+.load-animation {
+    animation-name: load;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+/* ===================
+        Reset geral
    =================== */
 * {
     margin: 0px;
@@ -8,15 +33,40 @@
     font-family: "Arial", "Times New Roman";
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* ===================
-   Container principal
+     Header e Navbar
    =================== */
-.container {
+.header-nav {
+    transform: translateX(20px);
+}
+
+/* ===================
+   Container flexível
+   =================== */
+.flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1920px;
+    width: 1350px;
+    padding: 5px;
+    margin: 80px 105px 0px 105px;
+}
+
+/* ===================
+          Reset
+   =================== */
+header, article, section {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    height: auto;
     width: 100%;
 }
 
@@ -26,42 +76,59 @@
 .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
+    width: 1300px;
 }
 
 /* ===================
      Dimensão da Logo
    =================== */
 #logo {
-    height: 15%;
-    width: 15%;
+    height: 20%;
+    width: 20%;
 }
 
 /* ===================
-      Formatação li 
+    Reset e Formatação 
+   =================== */
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ===================
+       Alinhamento 
+        Horizontal
+   =================== */
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 770px;
+}
+
+/* ===================
+     Deixar em linha 
    =================== */
 li {
-    list-style: none;
     display: inline;
 }
 
 /* ===================
-     Texto da NavBar
+     Texto da Navbar
    =================== */
 .list li a {
     text-decoration: none;
-    font-size: 21px;
+    font-size: 24px;
     color: black;
-    margin: 100px;
 }
 
 /* ===================
-   Animaçao Texo NavBar 
+     Seção motivação
    =================== */
-.list li a:hover {
-
+.section-motivation {
+    transform: translateX(20px);
 }
 
 /* ===================
@@ -72,17 +139,23 @@ li {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 105px;
-    margin-right: 105px;
+    margin: 0px 105px 0px 105px;
 }
 
 /* ===================
       Astronaut img
    =================== */
 #astronaut {
-    margin-top: 100px;
+    margin-top: 90px;
     width: 30%;
-    height: 30%;
+    height: 30%; 
+}
+
+/* ===================
+    Article motivação
+   =================== */
+#motivational-article {
+    margin-left: 140px;
 }
 
 /* ===================
@@ -90,16 +163,16 @@ li {
    =================== */
 .content {
     display: inline;
-    width: 637px;
+    width: 100%;
     height: 400px;
-    margin-left: 140px;
+    margin-right: 20px;
 }
 
 /* ===================
-          Texto 
+   Formatação do Texto 
    =================== */
 .text {
-    text-indent: 2.2em;
+    text-indent: 47.25px;
     line-height: 1.5;
     margin-top: 0.75em;
     text-align: justify;
