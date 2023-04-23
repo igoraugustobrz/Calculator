@@ -1,0 +1,32 @@
+/* ===================
+        Reset geral
+   =================== */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Arial", "Times New Roman";
+}
+
+/* ===================
+          Reset
+   =================== */
+header, article, section {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+}
+
+/* ===================
+    Reset e Formatação 
+   =================== */
+   ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}

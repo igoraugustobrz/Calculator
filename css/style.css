@@ -1,47 +1,20 @@
-/* ===================
-     Animação carregar 
-        conteúdo
-   =================== */
-@keyframes load {
-    to {
-        opacity: 1;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Bonheur+Royale&family=Inter&display=swap');
 
-    from {
-        opacity: 0;
-        transform: translateX(0);
-    }
-}
-
-/* =====================
-   Definição da animação 
-   ===================== */
-.load-animation {
-    animation-name: load;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
+/* =======================
+   Background da Scrollbar
+   ======================= */
+::-webkit-scrollbar {
+    width: 12px;
+    border: 5px solid white; 
 }
 
 /* ===================
-        Reset geral
+        ScrollBar
    =================== */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Arial", "Times New Roman";
-}
-
-body {
-    overflow-x: hidden;
-}
-
-/* ===================
-     Header e Navbar
-   =================== */
-.header-nav {
-    transform: translateX(20px);
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 50px;
+    border: 2px solid white;
 }
 
 /* ===================
@@ -53,21 +26,8 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1920px;
-    width: 1350px;
-    padding: 5px;
-    margin: 80px 105px 0px 105px;
-}
-
-/* ===================
-          Reset
-   =================== */
-header, article, section {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    top: 0;
-    height: auto;
-    width: 100%;
+    width: 1325px;
+    margin: 80px 100px 0px 100px;
 }
 
 /* ===================
@@ -78,7 +38,38 @@ header, article, section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
+    width: 1330px;
+}
+
+/* ===================
+        Pode ser 
+      reposicionado
+   =================== */
+nav a {
+    position: relative;
+}
+
+/* ========================
+   Cria a barra horizontal
+        abaixo do nav a
+   ======================== */
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 2.2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s ease-in-out;
+}
+
+/* ====================
+   Mouse acima == ativo
+   ==================== */
+nav a:hover::after {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* ===================
@@ -90,29 +81,13 @@ header, article, section {
 }
 
 /* ===================
-    Reset e Formatação 
-   =================== */
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-/* ===================
        Alinhamento 
         Horizontal
    =================== */
 .list {
     display: flex;
     justify-content: space-between;
-    width: 770px;
-}
-
-/* ===================
-     Deixar em linha 
-   =================== */
-li {
-    display: inline;
+    width: 790px;
 }
 
 /* ===================
@@ -120,15 +95,10 @@ li {
    =================== */
 .list li a {
     text-decoration: none;
+    font-family: "Arsenal", "Arial", "Times New Roman";
+    font-weight: 700;
     font-size: 24px;
     color: black;
-}
-
-/* ===================
-     Seção motivação
-   =================== */
-.section-motivation {
-    transform: translateX(20px);
 }
 
 /* ===================
@@ -138,8 +108,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    margin: 0px 105px 0px 105px;
+    align-items: start;
+    margin: 0px 100px 0px 100px;
 }
 
 /* ===================
@@ -152,9 +122,9 @@ li {
 }
 
 /* ===================
-    Article motivação
+      Article sobre
    =================== */
-#motivational-article {
+#about-article {
     margin-left: 140px;
 }
 
@@ -162,10 +132,19 @@ li {
          Content 
    =================== */
 .content {
-    display: inline;
     width: 100%;
-    height: 400px;
-    margin-right: 20px;
+    height: auto;
+    margin-top: 100px;
+}
+
+/* ===================
+      Formatação do
+         Título 
+   =================== */
+.title {
+    font-family: "Arsenal", "Arial", "Times New Roman";
+    font-size: 27.5px;
+    line-height: 1.5;
 }
 
 /* ===================
@@ -174,6 +153,5 @@ li {
 .text {
     text-indent: 47.25px;
     line-height: 1.5;
-    margin-top: 0.75em;
     text-align: justify;
 }
