@@ -2,25 +2,32 @@
 
 /* =======================
    Background da Scrollbar
+    Chorme, Edge e Safari
    ======================= */
 ::-webkit-scrollbar {
     width: 12px;
-    border: 5px solid white; 
+    border: 5px solid #ffffff; 
 }
 
-/* ===================
+/* =====================
         ScrollBar
-   =================== */
+   Chorme, Edge e Safari
+   ===================== */
 ::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: #000000;
     border-radius: 50px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #000000;
 }
 
 /* ===================
-   Container flexível
+   Container about
    =================== */
-.flex-container {
+.about-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +64,7 @@ nav a::after {
     content: " ";
     width: 0%;
     height: 2.2px;
-    background-color: black;
+    background-color: #000000;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -84,7 +91,7 @@ nav a:hover::after {
        Alinhamento 
         Horizontal
    =================== */
-.list {
+.nav-links {
     display: flex;
     justify-content: space-between;
     width: 790px;
@@ -93,12 +100,12 @@ nav a:hover::after {
 /* ===================
      Texto da Navbar
    =================== */
-.list li a {
+.nav-links li a {
     text-decoration: none;
     font-family: "Arsenal", "Arial", "Times New Roman";
     font-weight: 700;
-    font-size: 24px;
-    color: black;
+    font-size: 26px;
+    color: #000000;
 }
 
 /* ===================
@@ -118,7 +125,7 @@ nav a:hover::after {
 #astronaut {
     margin-top: 90px;
     width: 30%;
-    height: 30%; 
+    height: 30%;
 }
 
 /* ===================
@@ -138,20 +145,49 @@ nav a:hover::after {
 }
 
 /* ===================
-      Formatação do
-         Título 
+    Título seção Sobre 
    =================== */
-.title {
+.title-about {
     font-family: "Arsenal", "Arial", "Times New Roman";
     font-size: 27.5px;
     line-height: 1.5;
 }
 
 /* ===================
-   Formatação do Texto 
+   Texto seção Sobre 
    =================== */
-.text {
+.text-about {
     text-indent: 47.25px;
     line-height: 1.5;
     text-align: justify;
+}
+
+.title-section {
+    font-family: "Arsenal", "Arial", "Times New Roman";
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+/* ===================
+    Container Cards 
+   =================== */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px 0px 200px;
+} 
+
+/* ===================
+    Container Items 
+          Cards 
+   =================== */
+.card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

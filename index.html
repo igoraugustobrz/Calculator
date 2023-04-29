@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/card.css">
 
 </head>
 
@@ -19,10 +20,10 @@
 
     <!-- Header and Navbar -->
     <header>
-        <div class="flex-container">
+        <div class="about-container">
             <nav class="nav-container">
-                <img src="img/logo.png" id="logo" alt="Logo">
-                <ul class="list">
+                <img src="img/logo.svg" id="logo" alt="Logo">
+                <ul class="nav-links">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Aplicação</a></li>
                     <li><a href="#">Contato</a></li>
@@ -33,50 +34,90 @@
     <!-- End of Header and Navbar  -->
 
 
-    <main>
 
-        <!-- Section -->
-        <section>
-            <div class="container-content">
-                <img src="img/astronauta.svg" alt="Astronauta" id="astronaut">
 
-                <!-- About Article  -->
-                <article id="about-article">
-                    <div class="content">
-                        <h2 class="title">Sobre</h2>
-                        <p class="text">Desde muito jovem, nutro uma grande paixão pela Astronomia e sempre tive o
-                            desejo de incorporar essa temática em um projeto Front-End por meio do Design. Com esse
-                            propósito em mente, desenvolvi este website, buscando aprimorar minhas habilidades na
-                            programação e aplicá-las na criação de site visualmente atraente e funcional.
+    <!-- Section About -->
+    <section>
+        <div class="container-content">
+            <img src="img/astronauta.svg" alt="Astronauta" id="astronaut">
 
-                        </p>
-                        <p class="text">Utilizei conceitos de UX/UI, design responsivo e muita interatividade para
-                            proporcionar a
-                            melhor experiência possível. Além disso, busquei utilizar elementos visuais inspirados no
-                            espaço, como ilustrações de astros, para transmitir a sensação de fascínio e maravilha que a
-                            Astronomia desperta.
-                        </p>
-                        <p class="text">
-                            Por fim, convido-o a compartilhar seu feedback sobre o projeto. Estou comprometido em
-                            analisar cuidadosamente todas as sugestões e contribuir para a constante melhoria do site.
-                            Sua opinião é extremamente importante!
-                        </p>
-                    </div>
-                </article>
+            <!-- About Article  -->
+            <article id="about-article">
+                <div class="content">
+                    <h2 class="title-about">Sobre</h2>
+                    <p class="text-about">Desde muito jovem, nutro uma grande paixão pela Astronomia e sempre tive o
+                        desejo de incorporar essa temática em um projeto Front-End por meio do Design. Com esse
+                        propósito em mente, desenvolvi este website, buscando aprimorar minhas habilidades na
+                        programação e aplicá-las na criação de um site visualmente atraente e funcional.
+
+                    </p>
+                    <p class="text-about">Utilizei conceitos de UX/UI, design responsivo e muita interatividade para
+                        proporcionar a
+                        melhor experiência possível. Além disso, busquei utilizar elementos visuais inspirados no
+                        espaço, como ilustrações de astros, para transmitir a sensação de fascínio e maravilha que a
+                        Astronomia desperta.
+                    </p>
+                    <p class="text-about">
+                        Convido-o você a compartilhar seu feedback sobre o projeto quando finalizar a visita ao
+                        site. Estou comprometido em analisar cuidadosamente todas as sugestões e contribuir para a
+                        constante melhoria desta aplicação. Sua opinião é extremamente importante!
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- End of Section About  -->
+
+
+    <!-- Section Phases -->
+    <section>
+        <h2 class="title-section">Etapas</h2>
+        <div class="cards-container">
+
+            <!-- Design Card -->
+            <div class="card">
+                <div class="card-items">
+                    <p class="title-card">Design</p>
+                    <img src="img/icones/icon-github.svg " alt="Ícone do Figma">
+                    <p class="text-card">Processo documentado</p>
+                </div>
             </div>
-        </section>
-        <!-- End of Section -->
+            <!-- End of Design Card -->
 
-        <!-- Section Phases -->
-        <section>
+            <!-- Development Card -->
+            <div class="card">
+                <div class="card-items">
+                    <p class="title-card">Code</p>
+                    <img src="img/icones/icon-github.svg " alt="Ícone de código">
+                    <p class="text-card">Processo documentado</p>
+                </div>
+            </div>
+            <!-- End of Development Card -->
+
+            <!-- Documentation Card -->
+            <div class="card">
+                <div class="card-items">
+                    <p class="title-card">Readme</p>
+                    <img src="img/icones/icon-github.svg " alt="Ícone de documento">
+                    <p class="text-card">Processo documentado</p>
+                </div>
+            </div>
+            <!-- End of Documentation Card -->
+
+        </div>
+    </section>
+    <!-- End of Section Phases -->
+
+    <!-- Application Section -->
+    <section>
+        <h2 class="title-section">Aplicação</h2>
+        <article>
             <div>
 
             </div>
-        </section>
-        <!-- End of Phases -->
-
-    </main>
-
+        </article>
+    </section>
+    <!-- End of Section Application -->
 
 </body>
 

@@ -1,0 +1,28 @@
+/* ===================
+     Título do Card
+   =================== */
+.title-card {
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* ===================
+      Texto do Card
+   =================== */
+.text-card {
+    color: #FFFFFF;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* ===================
+      Design do Card
+   =================== */
+.card {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 7px;
+}
