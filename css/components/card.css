@@ -1,4 +1,32 @@
 /* ===================
+      Design do Card
+   =================== */
+.card {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+/* ===================
+   Box-shadow ao redor
+         do card
+   =================== */
+.card:hover {
+    box-shadow: -6px 6px #808080;
+}
+
+/* ===================
+    Espaçamento entre
+      os Items Cards 
+   =================== */
+.card-items img {
+    margin: 30px 0px;
+}
+
+/* ===================
      Título do Card
    =================== */
 .title-card {
@@ -14,15 +42,4 @@
     color: #FFFFFF;
     line-height: 1.5;
     text-align: justify;
-}
-
-/* ===================
-      Design do Card
-   =================== */
-.card {
-    width: auto;
-    height: auto;
-    padding: 30px;
-    background-color: #000000;
-    border-radius: 7px;
 }

@@ -136,7 +136,7 @@ nav a:hover::after {
 }
 
 /* ===================
-         Content 
+    Container Content 
    =================== */
 .content {
     width: 100%;
@@ -162,6 +162,10 @@ nav a:hover::after {
     text-align: justify;
 }
 
+/* ===================
+      Formatação do 
+     título da seção 
+   =================== */
 .title-section {
     font-family: "Arsenal", "Arial", "Times New Roman";
     font-size: 35px;
@@ -171,7 +175,7 @@ nav a:hover::after {
 }
 
 /* ===================
-    Container Cards 
+     Container Cards 
    =================== */
 .cards-container {
     display: flex;
