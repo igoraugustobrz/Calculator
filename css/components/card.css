@@ -1,3 +1,26 @@
+
+/* ===================
+     Container Cards 
+   =================== */
+   .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 300px 0px 300px;
+} 
+
+/* ===================
+    Container Items 
+          Cards 
+   =================== */
+.card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ===================
       Design do Card
    =================== */
@@ -5,7 +28,8 @@
     width: auto;
     height: auto;
     padding: 30px;
-    background-color: #000000;
+    background-color: #fff;
+    border: 1px solid black;
     border-radius: 20px;
     transition: all 0.5s ease;
 }
@@ -15,7 +39,8 @@
          do card
    =================== */
 .card:hover {
-    box-shadow: -6px 6px #808080;
+    box-shadow: -6px 6px #000000;
+    border: 1px solid #000000;  
 }
 
 /* ===================
@@ -30,7 +55,7 @@
      Título do Card
    =================== */
 .title-card {
-    color: #FFFFFF;
+    color: #000000;
     font-size: 22px;
     text-align: center;
 }
@@ -39,7 +64,7 @@
       Texto do Card
    =================== */
 .text-card {
-    color: #FFFFFF;
+    color: #000000;
     line-height: 1.5;
     text-align: justify;
 }

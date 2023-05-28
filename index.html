@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/button.css">
     <link rel="stylesheet" href="css/components/card.css">
 
 </head>
@@ -22,7 +23,7 @@
     <header>
         <div class="about-container">
             <nav class="nav-container">
-                <img src="img/logo.svg" id="logo" alt="Logo">
+                <img src="img/logo.svg" alt="Logo">
                 <ul class="nav-links">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Aplicação</a></li>
@@ -33,43 +34,42 @@
     </header>
     <!-- End of Header and Navbar  -->
 
-
-
-
     <!-- Section About -->
     <section>
         <div class="container-content">
-            <img src="img/astronauta.svg" alt="Astronauta" id="astronaut">
+            <img src="img/astronauta.svg" alt="Astronauta">
 
             <!-- About Article  -->
             <article id="about-article">
                 <div class="content">
                     <h2 class="title-about">Sobre</h2>
-                    <p class="text-about">Desde muito jovem, nutro uma grande paixão pela Astronomia e sempre tive o
+                    <p class="text">Desde muito jovem, nutro uma grande paixão pela Astronomia e sempre tive o
                         desejo de incorporar essa temática em um projeto Front-End por meio do Design. Com esse
                         propósito em mente, desenvolvi este website, buscando aprimorar minhas habilidades na
                         programação e aplicá-las na criação de um site visualmente atraente e funcional.
 
                     </p>
-                    <p class="text-about">Utilizei conceitos de UX/UI, design responsivo e muita interatividade para
+                    <p class="text">Utilizei conceitos de UX/UI, design responsivo e muita interatividade para
                         proporcionar a
                         melhor experiência possível. Além disso, busquei utilizar elementos visuais inspirados no
                         espaço, como ilustrações de astros, para transmitir a sensação de fascínio e maravilha que a
                         Astronomia desperta.
                     </p>
-                    <p class="text-about">
+                    <p class="text">
                         Convido-o você a compartilhar seu feedback sobre o projeto quando finalizar a visita ao
                         site. Estou comprometido em analisar cuidadosamente todas as sugestões e contribuir para a
                         constante melhoria desta aplicação. Sua opinião é extremamente importante!
                     </p>
                 </div>
             </article>
+            <!-- End of About Article  -->
+
         </div>
     </section>
     <!-- End of Section About  -->
 
 
-    <!-- Section Phases -->
+    <!-- Phases Section  -->
     <section>
         <h2 class="title-section">Etapas</h2>
         <div class="cards-container">
@@ -78,7 +78,7 @@
             <div class="card">
                 <div class="card-items">
                     <p class="title-card">Design</p>
-                    <img src="img/icons/icon-figma.svg" alt="Ícone do Figma" class="esp">
+                    <img src="img/icons/icon-figma.svg" alt="Ícone do Figma">
                     <p class="text-card">Design criado no Figma</p>
                 </div>
             </div>
@@ -88,7 +88,7 @@
             <div class="card">
                 <div class="card-items">
                     <p class="title-card">Code</p>
-                    <img src="img/icons/icon-code.svg" alt="Ícone de código" class="esp">
+                    <img src="img/icons/icon-code.svg" alt="Ícone de código">
                     <p class="text-card">Uso do HTML semântico</p>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="card">
                 <div class="card-items">
                     <p class="title-card">GitHub</p>
-                    <img src="img/icons/icon-github.svg" alt="Ícone do GitHub" class="esp">
+                    <img src="img/icons/icon-github.svg" alt="Ícone do GitHub">
                     <p class="text-card">Processo documentado</p>
                 </div>
             </div>
@@ -108,16 +108,63 @@
     </section>
     <!-- End of Section Phases -->
 
-    <!-- Application Section -->
-    <section>
-        <h2 class="title-section">Aplicação</h2>
-        <article>
-            <div>
+    <!-- Main Content  -->
+    <main>
 
-            </div>
-        </article>
-    </section>
-    <!-- End of Section Application -->
+        <!-- Application Section -->
+        <section>
+            <h2 class="title-section">Aplicação</h2>
+            <div class="application-container">
+
+                <!-- Article application -->
+                <article class="text-application">
+                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                        not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </article>
+                <!-- End of Article application -->
+
+                <div class="calculator">
+
+                    <!-- Calculator Display -->
+                    <div class="calculator-display">0</div>
+                    <!-- End of Calculator Display -->
+
+                    <!-- Calculator Buttons -->
+                    <div class="calculator-buttons">
+                        <button class="button-application">π</button>
+                        <button class="button-application">n!</button>
+                        <button class="button-application"></button>
+                        <button class="button-application">/</button>
+                        <button class="button-application">7</button>
+                        <button class="button-application">8</button>
+                        <button class="button-application">9</button>
+                        <button class="button-application">*</button>
+                        <button class="button-application">4</button>
+                        <button class="button-application">5</button>
+                        <button class="button-application">6</button>
+                        <button class="button-application">-</button>
+                        <button class="button-application">1</button>
+                        <button class="button-application">2</button>
+                        <button class="button-application">3</button>
+                        <button class="button-application">+</button>
+                        <button class="button-application">AC</button>
+                        <button class="button-application">0</button>
+                        <button class="button-application">.</button>
+                        <button class="button-application">=</button>
+                    </div>
+                    <!-- End of Calculator Buttons -->
+
+                </div>
+        </section>
+        <!-- End of Section Application -->
+    </main>
+    <!-- End of Main Content -->
 
 </body>
 

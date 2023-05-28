@@ -1,0 +1,21 @@
+/* ======================
+   Estilização dos Botões  
+   ====================== */
+.button-application {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 28px;
+    border-radius: 15px;
+    width: 65px;
+    height: 70px;
+    margin: 5px 3px;
+}
+
+/* ======================
+   Efeito de zoom out nos 
+           botões         
+   ====================== */
+.button-application:active {
+    transform: scale(0.9);
+    transition: 0.2s ease all;    
+} 

@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Bonheur+Royale&family=Inter&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Bonheur+Royale&family=Inter&display=swap");
 /* =======================
    Background da Scrollbar
     Chorme, Edge e Safari
    ======================= */
 ::-webkit-scrollbar {
-    width: 12px;
-    border: 5px solid #ffffff; 
+  width: 12px;
+  border: 5px solid #ffffff;
 }
 
 /* =====================
@@ -14,38 +13,33 @@
    Chorme, Edge e Safari
    ===================== */
 ::-webkit-scrollbar-thumb {
-    background-color: #000000;
-    border-radius: 50px;
-    border: 2px solid #ffffff;
-}
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #000000;
+  background-color: #000000;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
 }
 
 /* ===================
-   Container about
+     Container about
    =================== */
 .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1920px;
-    width: 1325px;
-    margin: 80px 100px 0px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  width: 1325px;
+  margin: 80px 100px 0px 100px;
 }
 
 /* ===================
    Container da NavBar
    =================== */
 .nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1330px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1330px;
 }
 
 /* ===================
@@ -53,7 +47,7 @@
       reposicionado
    =================== */
 nav a {
-    position: relative;
+  position: relative;
 }
 
 /* ========================
@@ -61,30 +55,30 @@ nav a {
         abaixo do nav a
    ======================== */
 nav a::after {
-    content: " ";
-    width: 0%;
-    height: 2.2px;
-    background-color: #000000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.25s ease-in-out;
+  content: " ";
+  width: 0%;
+  height: 2.2px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.25s ease-in-out;
 }
 
 /* ====================
    Mouse acima == ativo
    ==================== */
 nav a:hover::after {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* ===================
      Dimensão da Logo
    =================== */
-#logo {
-    height: 20%;
-    width: 20%;
+.nav-container img {
+  height: 20%;
+  width: 20%;
 }
 
 /* ===================
@@ -92,74 +86,75 @@ nav a:hover::after {
         Horizontal
    =================== */
 .nav-links {
-    display: flex;
-    justify-content: space-between;
-    width: 790px;
+  display: flex;
+  justify-content: space-between;
+  width: 790px;
 }
 
 /* ===================
      Texto da Navbar
    =================== */
 .nav-links li a {
-    text-decoration: none;
-    font-family: "Arsenal", "Arial", "Times New Roman";
-    font-weight: 700;
-    font-size: 26px;
-    color: #000000;
+  text-decoration: none;
+  font-family: "Arsenal", "Arial", "Times New Roman";
+  font-weight: 700;
+  font-size: 26px;
+  color: #000000;
 }
 
 /* ===================
    Container content 
    =================== */
 .container-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: start;
-    margin: 0px 100px 0px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 0px 100px 10px 100px;
 }
 
 /* ===================
       Astronaut img
    =================== */
-#astronaut {
-    margin-top: 90px;
-    width: 30%;
-    height: 30%;
+.container-content img {
+  margin-top: 90px;
+  width: 30%;
+  height: 30%;
 }
 
 /* ===================
       Article sobre
    =================== */
 #about-article {
-    margin-left: 140px;
+  margin-left: 140px;
 }
 
 /* ===================
     Container Content 
    =================== */
 .content {
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
 }
 
 /* ===================
     Título seção Sobre 
    =================== */
 .title-about {
-    font-family: "Arsenal", "Arial", "Times New Roman";
-    font-size: 27.5px;
-    line-height: 1.5;
+  font-family: "Arsenal", "Arial", "Times New Roman";
+  font-size: 27.5px;
+  line-height: 1.5;
 }
 
 /* ===================
-   Texto seção Sobre 
+    Texto seção Sobre 
    =================== */
-.text-about {
-    text-indent: 47.25px;
-    line-height: 1.5;
-    text-align: justify;
+.text {
+  text-indent: 47.25px;
+  line-height: 1.5;
+  margin: 10px 0px 0px 0px;
+  text-align: justify;
 }
 
 /* ===================
@@ -167,31 +162,75 @@ nav a:hover::after {
      título da seção 
    =================== */
 .title-section {
-    font-family: "Arsenal", "Arial", "Times New Roman";
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 90px;
-    margin-top: 90px;
+  font-family: "Arsenal", "Arial", "Times New Roman";
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 90px;
 }
 
-/* ===================
-     Container Cards 
-   =================== */
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 200px 0px 200px;
-} 
+/* ======================
+    Container Application 
+   ====================== */
+.application-container {
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0px 300px 0px 300px;
+  width: auto;
+  height: auto;
+}
 
-/* ===================
-    Container Items 
-          Cards 
-   =================== */
-.card-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* ======================
+     Formatação do texto 
+   ====================== */
+.text-application {
+  border: 1px solid green;
+  display: flex;
+  width: 500px;
+}
+
+/* ======================
+       Container da 
+       Calculadora 
+   ====================== */
+.calculator {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 0px 10px 0px 10px;
+}
+
+/* ======================
+    Container do Display
+       (calculadora)         
+   ====================== */
+.calculator-display {
+  width: 280px;
+  margin: 15px 15px;
+  height: 75px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: end;
+}
+
+/* ======================
+    Container dos Botões
+       (calculadora)         
+   ====================== */
+.calculator-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px;
+  width: 300px;
+  background-color: #ffffff;
 }
