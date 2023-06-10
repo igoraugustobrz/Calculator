@@ -44,7 +44,8 @@ $ cd Calculator
 ## Construído com 
 
 - HTML;
-- CSS.
+- CSS;
+- JavaScript.
 
 ## Contribuindo 
 
