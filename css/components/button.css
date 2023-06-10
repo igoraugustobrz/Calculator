@@ -1,21 +1,31 @@
 /* ======================
    Estilização dos Botões  
    ====================== */
-.button-application {
-    background-color: #ffffff;
-    color: #000000;
+.key-style {
     font-size: 28px;
-    border-radius: 15px;
     width: 65px;
     height: 70px;
-    margin: 5px 3px;
+    color: #000000;
+    background-color: #ffffff;   
+    border-radius: 15px;
 }
 
 /* ======================
    Efeito de zoom out nos 
            botões         
    ====================== */
-.button-application:active {
+.key-style:active {
     transform: scale(0.9);
     transition: 0.2s ease all;    
-} 
+}
+
+/* ======================
+      Personalização do
+        botão "igual"         
+   ====================== */
+#key-equal {
+    height: 100%;
+    grid-column: 4;
+    grid-row: 2 / span 4;
+    align-items: start;
+}  

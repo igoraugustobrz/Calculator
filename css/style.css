@@ -198,10 +198,10 @@ nav a:hover::after {
        Calculadora 
    ====================== */
 .calculator {
-  display: inline;
   border: 1px solid black;
   border-radius: 15px;
-  margin: 0px 10px 0px 10px;
+  margin: 40px;
+  padding: 10px;
 }
 
 /* ======================
@@ -209,28 +209,23 @@ nav a:hover::after {
        (calculadora)         
    ====================== */
 .calculator-display {
-  width: 280px;
-  margin: 15px 15px;
-  height: 75px;
+  font-size: 40px;
+  text-align: right;
+  padding: 0.35em 0.35em;
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 15px;
-  font-size: 40px;
-  line-height: 70px;
-  text-align: end;
+  margin-bottom: 15px;
 }
 
 /* ======================
     Container dos Botões
        (calculadora)         
    ====================== */
-.calculator-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 5px;
-  width: 300px;
-  background-color: #ffffff;
+  gap: 5px;
 }
